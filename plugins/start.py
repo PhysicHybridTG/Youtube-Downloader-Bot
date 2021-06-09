@@ -8,7 +8,6 @@ async def start(client, message):
         [InlineKeyboardButton("Support Group", url="https://t.me/InFoTel_Group")],
         [InlineKeyboardButton(
             "My Father 👩‍💻", https://t.me/Physic_hybrid")]
-  
     ])
     welcomed = f"Hey <b>{message.from_user.first_name}</b>\n/help for More info"
     await message.reply_text(welcomed, reply_markup=joinButton)
