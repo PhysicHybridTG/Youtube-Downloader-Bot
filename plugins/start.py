@@ -1,4 +1,4 @@
-from pyrogram import CLient, Filters
+from pyrogram import Client, Filters
 from pyrogram import InlineKeyboardButton, InlineKeyboardMarkup
 
 
