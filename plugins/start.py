@@ -20,7 +20,7 @@ async def start (bot, update):
                 ],
                 [
                     InlineKeyboardButton("Help", callback_data="help_menu"),
-                    InlineKeyboardButton("Close", callback="close_btn")
+                    InlineKeyboardButton("Close", callback_data="close_btn")
                 ]
             ]
         )
