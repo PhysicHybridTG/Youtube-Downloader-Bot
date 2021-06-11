@@ -33,8 +33,8 @@ async def about(bot, update):
 
     await bot.send_message(
         chat_id=update.chat.id,
-        text="about ○My name: You Tube Downloder Bot",
-                  text="Hello <a herf='https://t.me/username'>World</a>"
+        text="about ○My name: You Tube Downloder Bot"
+                  "Hello" <a herf='https://t.me/username'>World</a>",
         parse_mode="html",
         reply_markup=InlineKeyboardMarkup(
             [
