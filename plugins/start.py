@@ -52,12 +52,12 @@ async def about(bot, update):
 async def help_cb(bot, update):
       
       await update.message.edit_text(
-           text="help text",
+           text="help no one help you",
            parse_mode="html",
            reply_markup=InlineKeyboardMarkup(
               [
                   [
-                      InlineKeyboardButton("About", callback="about_menu"),
+                      InlineKeyboardButton("About", callback_data="about_menu"),
                       InlineKeyboardButton("Close", callback="close_btn")
                   ]
               ]
