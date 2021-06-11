@@ -19,7 +19,7 @@ async def start (bot, update):
                     InlineKeyboardButton("Channel", url="https://t.me/username")
                 ],
                 [
-                    InlineKeyboardButton("Help", callback="help_menu"),
+                    InlineKeyboardButton("Help", callback_data="help_menu"),
                     InlineKeyboardButton("Close", callback="close_btn")
                 ]
             ]
