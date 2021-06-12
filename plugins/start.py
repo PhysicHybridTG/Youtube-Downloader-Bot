@@ -39,7 +39,7 @@ async def about(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Close", callback="close_btn")
+                    InlineKeyboardButton("Close", callback_data="close_btn")
                 ]
             ]
         )
