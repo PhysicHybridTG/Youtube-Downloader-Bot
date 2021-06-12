@@ -34,6 +34,38 @@ async def catch_youtube_fmtid(c, m):
 
         await m.edit_message_reply_markup(buttons)
 
+
+    elif cb_data == "help_menu":
+        await update.message.edit_text(
+             text="help text",
+             parse_mode="html",
+             reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("About", callback="about_menu"),
+                        InlineKeyboardButton("Close", callback="close_btn")
+                    ]
+                ]
+              )
+
+        )
+
+
+    elif cb_data == "about_menu":
+        await update.message.edit_text(
+             text="about text",
+             parse_mode="html",
+             reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("Close", callback="close_btn")
+                    ]
+                ]
+              )
+
+        )
+
+
     else:
         raise ContinuePropagation
 
