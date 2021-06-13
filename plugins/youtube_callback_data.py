@@ -14,6 +14,9 @@ from helper.ytdlfunc import downloadvideocli, downloadaudiocli
 from PIL import Image
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
+from pyrogram import Client, Filters
+from pyrogram import InlineKeyboardButton, InlineKeyboardMarkup
+
 @Client.on_callback_query(Filters.regex(r"help_menu"), 3)
 async def help_cb(bot, update):
       
