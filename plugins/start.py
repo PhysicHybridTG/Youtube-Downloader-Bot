@@ -45,7 +45,7 @@ async def about(bot, update):
 <b>○ Server :</b> <a href="https://herokuapp.com/">Heroku</a>
 <b>○ Database :</b> <a href="https://www.mongodb.com/">MongoDB</a>
 <b>○ Build Status :</b> <code>V2.1 [BETA]</code>
-<b>📜 Quote :</b> <code>ആരും പേടിക്കണ്ട എല്ലാവർക്കും കിട്ടും™️</code>"""
+<b>📜 Quote :</b> <code>ആരും പേടിക്കണ്ട എല്ലാവർക്കും കിട്ടും™️</code>""".format(update.from_user.mention),
 
 
 """.format(update.from_user.mention),
