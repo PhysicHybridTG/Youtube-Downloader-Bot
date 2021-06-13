@@ -14,7 +14,46 @@ from helper.ytdlfunc import downloadvideocli, downloadaudiocli
 from PIL import Image
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
+@Client.on_callback_query(Filters.regex(r"help_menu"), 3)
+async def help_cb(bot, update):
+      
+      await update.message.edit_text(
+           text="help no one help you",
+           parse_mode="html",
+           reply_markup=InlineKeyboardMarkup(
+              [
+                  [
+                      InlineKeyboardButton("About", callback_data="about_menu"),
+                      InlineKeyboardButton("Close", callback="close_btn")
+                  ]
+              ]
+            )
 
+      )
+
+
+
+@Client.on_callback_query(Filters.regex(r"about_menu"), 2)
+async def about_cb(bot, update):
+      
+      await update.message.edit_text(
+           text="about text",
+           parse_mode="html",
+           reply_markup=InlineKeyboardMarkup(
+              [
+                  [
+                      InlineKeyboardButton("Close", callback="close_btn")
+                  ]
+              ]
+            )
+
+      )
+
+
+@Client.on_callback_query(Filters.regex(r"close_btn"), 2)
+async def close_btn_cb(bot, update):
+      
+      await update.message.delete()
 @Client.on_callback_query()
 async def catch_youtube_fmtid(c, m):
     cb_data = m.data
