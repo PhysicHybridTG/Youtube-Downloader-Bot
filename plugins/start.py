@@ -48,7 +48,7 @@ async def about(bot, update):
 
 
 
-@Client.on_callback_query(Filters.regex(r"help_menu"), 3)
+@Client.on_callback_query(Filters.regex(r"help_menu"), 2)
 async def help_cb(bot, update):
       
       await update.message.edit_text(
