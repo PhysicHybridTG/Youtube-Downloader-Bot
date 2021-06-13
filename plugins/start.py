@@ -58,7 +58,7 @@ async def help_cb(bot, update):
               [
                   [
                       InlineKeyboardButton("About", callback_data="about_menu"),
-                      InlineKeyboardButton("Close", callback="close_btn")
+                      InlineKeyboardButton("Close", callback_data="close_btn")
                   ]
               ]
             )
