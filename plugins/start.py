@@ -15,12 +15,12 @@ async def start (bot, update):
             [
                 [
                     
-                    InlineKeyboardButton("Dev", url="https://t.me/username"),
-                    InlineKeyboardButton("Channel", url="https://t.me/username")
+                    InlineKeyboardButton("Dev 👨‍💻", url="https://t.me/Physic_hybrid"),
+                    InlineKeyboardButton("Support Group 💵", url="https://t.me/InFoTel_Group")
                 ],
                 [
-                    InlineKeyboardButton("Help", callback_data="help_menu"),
-                    InlineKeyboardButton("Close", callback_data="close_btn")
+                    InlineKeyboardButton("Help📘", callback_data="help_menu"),
+                    InlineKeyboardButton("Close🔐", callback_data="close_btn")
                 ]
             ]
         )
@@ -72,8 +72,8 @@ async def help_cb(bot, update):
            reply_markup=InlineKeyboardMarkup(
               [
                   [
-                      InlineKeyboardButton("About", callback_data="about_menu"),
-                      InlineKeyboardButton("Close", callback_data="close_btn")
+                      InlineKeyboardButton("About😎", callback_data="about_menu"),
+                      InlineKeyboardButton("Close🔐", callback_data="close_btn")
                   ]
               ]
             )
@@ -104,7 +104,7 @@ async def about_cb(bot, update):
            reply_markup=InlineKeyboardMarkup(
               [
                   [
-                      InlineKeyboardButton("Close", callback_data="close_btn")
+                      InlineKeyboardButton("Close🔐", callback_data="close_btn")
                   ]
               ]
             )
