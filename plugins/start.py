@@ -48,7 +48,7 @@ async def about(bot, update):
 <b>📜 Quote :</b> <code>ആരും പേടിക്കണ്ട എല്ലാവർക്കും കിട്ടും™️</code>""".format(update.from_user.mention),
 
 
-""".format(update.from_user.mention),
+
                
         parse_mode="html",
         reply_markup=InlineKeyboardMarkup(
