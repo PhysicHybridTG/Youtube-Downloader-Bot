@@ -67,7 +67,7 @@ async def about(bot, update):
 async def help_cb(bot, update):
       
       await update.message.edit_text(
-           text="""🙋🏻‍♂️   Hey Please Follow This step</b>
+           text="""🙋🏻‍♂️  <b> Hey Please Follow This step</b>
 <b>○ Just Send Youtube Url</b>
 <b>○ Only Youtube Url Support</b>
 <b>○ ⚠️Playlist Note support</b>""",
