@@ -67,10 +67,10 @@ async def about(bot, update):
 async def help_cb(bot, update):
       
       await update.message.edit_text(
-           text=f"Hey 🙋‍♂️{update.from_user.mention} Please Follow This step
+           text="""🙋🏻‍♂️   Hey    <code> {}🤓</code> Please Follow This step
 <b>○ Just Send Youtube Url
 <b>○ Only Youtube Url Support
-<b>○ ⚠️Playlist Note support",
+<b>○ ⚠️Playlist Note support""",
            parse_mode="html",
            reply_markup=InlineKeyboardMarkup(
               [
