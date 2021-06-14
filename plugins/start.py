@@ -9,7 +9,7 @@ async def start (bot, update):
 
     await bot.send_message(
         chat_id=update.chat.id,
-        text=f"Hey 🙋‍♂️{update.from_user.mention} Am YouTube Downloader Bot 😎 I will convert YouTube link to Video / File & MP3..",
+        text=f"Hey 🙋‍♂️{update.from_user.mention} Am Power Full YouTube Downloader Bot 😎 I will convert YouTube link to Video / File & MP3..",
         parse_mode="html",
         reply_markup=InlineKeyboardMarkup(
             [
@@ -67,10 +67,10 @@ async def about(bot, update):
 async def help_cb(bot, update):
       
       await update.message.edit_text(
-           text="""🙋🏻‍♂️   Hey    <code> {}🤓</code> Please Follow This step
-<b>○ Just Send Youtube Url
-<b>○ Only Youtube Url Support
-<b>○ ⚠️Playlist Note support""",
+           text="""🙋🏻‍♂️   Hey Please Follow This step</b>
+<b>○ Just Send Youtube Url</b>
+<b>○ Only Youtube Url Support</b>
+<b>○ ⚠️Playlist Note support</b>""",
            parse_mode="html",
            reply_markup=InlineKeyboardMarkup(
               [
