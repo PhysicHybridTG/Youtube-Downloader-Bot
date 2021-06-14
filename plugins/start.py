@@ -86,7 +86,20 @@ async def help_cb(bot, update):
 async def about_cb(bot, update):
       
       await update.message.edit_text(
-           text="about text",
+           text="""🙋🏻‍♂️   Hellooo    <code> {}🤓</code>
+    
+<b>○ My Name :</b> <code>YouTube Downloader Bot</code>
+<b>○ Creator :</b> <a href="https://t.me/Physic_hybrid">Physic_Hybrid🇮🇳</a>
+<b>○ Credits :</b> <code>Everyone in this journey</code>
+<b>○ Language :</b> <code>Python3</code>
+<b>○ Library :</b> <a href="https://docs.pyrogram.org/">Pyrogram asyncio 0.17.1</a>
+<b>○ Supported Site :</b> <a href="https://www.youtube.com/">Only YouTube</a>
+<b>○ Source Code :</b> <a href="https://t.me/AdhavaaBiriyaniKittiyalo">👉 Click Here</a>
+<b>○ Server :</b> <a href="https://herokuapp.com/">Heroku</a>
+<b>○ Database :</b> <a href="https://www.mongodb.com/">MongoDB</a>
+<b>○ Build Status :</b> <code>V2.1 [BETA]</code>
+<b>📜 Quote :</b> <code>ആരും പേടിക്കണ്ട എല്ലാവർക്കും കിട്ടും™️</code>"""
+
            parse_mode="html",
            reply_markup=InlineKeyboardMarkup(
               [
