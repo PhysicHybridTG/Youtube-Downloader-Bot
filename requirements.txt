@@ -1,4 +1,4 @@
-
+pytz
 TgCrypto
 https://github.com/prgofficial/pyrogram/archive/asyncio.zip
 git+https://github.com/ytdl-org/youtube-dl
