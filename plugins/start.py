@@ -1,6 +1,19 @@
 from pyrogram import Client, Filters
 from pyrogram import InlineKeyboardButton, InlineKeyboardMarkup
+> import datetime
 
+import pytz 
+
+IST = pytz.timezone('Asia/Kolkata') 
+currentTime = datetime.datetime.now(IST)
+if currentTime.hour < 12:
+    print('Good morning.')
+elif 12 <= currentTime.hour < 18:
+     print('Good afternoon.')
+else:
+    print('Good evening.')
+
+>> Good morning.
 
 
 
