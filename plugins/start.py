@@ -10,10 +10,6 @@ import pytz
 
 @Client.on_message(Filters.command(["start"]), 1)
 async def start (bot, update):
-
-
-
-
     IST = pytz.timezone('Asia/Kolkata') 
     currentTime = datetime.datetime.now(IST)
     if currentTime.hour < 12:
