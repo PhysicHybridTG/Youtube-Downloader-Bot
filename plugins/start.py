@@ -13,18 +13,15 @@ async def start (bot, update):
 
 
 
-import datetime
 
-import pytz 
-
-IST = pytz.timezone('Asia/Kolkata') 
-currentTime = datetime.datetime.now(IST)
-if currentTime.hour < 12:
-    wish = 'Good morning.'
-elif 12 <= currentTime.hour < 18:
-    wish = 'Good afternoon.'
-else:
-    wish = 'Good evening.'
+    IST = pytz.timezone('Asia/Kolkata') 
+    currentTime = datetime.datetime.now(IST)
+    if currentTime.hour < 12:
+        wish = 'Good morning.'
+    elif 12 <= currentTime.hour < 18:
+        wish = 'Good afternoon.'
+    else:
+        wish = 'Good evening.'
     await bot.send_message(
         chat_id=update.chat.id,
         text=f"Hey 🙋‍♂️{update.from_user.mention} Am Power Full YouTube Downloader Bot 😎 I will convert YouTube link to Video / File & MP3..",
